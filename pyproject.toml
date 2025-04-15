@@ -3,10 +3,11 @@ name = "markup-document-converter"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "pwalecki",email = "01178613@pw.edu.pl"}
+    {name = "Rafał Celiński",email = "dev@rafalcelinski.pl"},
+    {name = "Przemysław Walecki",email = "p.walecki12@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
     "pytest (>=8.3.5,<9.0.0)"
 ]
@@ -14,6 +15,11 @@ dependencies = [
 [tool.poetry]
 packages = [{include = "markup_document_converter", from = "src"}]
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8 = "^7.1.2"
+pre-commit = "^4.2.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
